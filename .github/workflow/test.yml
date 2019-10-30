@@ -1,0 +1,12 @@
+on:
+   pull_request:
+      branches:
+         - master
+
+jobs:
+  build:
+    runs-on: windows-2019 
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: maste
