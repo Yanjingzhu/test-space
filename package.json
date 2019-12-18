@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "foo" : "1.0.0 - 2.9999.9999",
-    "mymodule" : "git+https://github.com/zhuOrg/hello-github-actions.git"
+    "mymodule" : "git+ssh://git@github.com:Yanjingzhu/npmPackages.git"
   }
 }
