@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "foo": "1.0.0 - 2.9999.9999",
-    "mymodule": "git+https://Yanjingzhu:Joling123*@github.com/Yanjingzhu/npmPackages.git"
+    "mymodule": "git+https://github.com/Yanjingzhu/npmPackages.git"
   }
 }
