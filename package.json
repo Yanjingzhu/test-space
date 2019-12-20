@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "foo": "1.0.0 - 2.9999.9999",
-    "mymodule": "git://github.com/Yanjingzhu/YanGitRepo.git#v1.0"
+    "mymodule": "git://github.com/zhuOrg/orgrepo1.git#v2.1"
     
   }
 }
