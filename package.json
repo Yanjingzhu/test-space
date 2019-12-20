@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "foo": "1.0.0 - 2.9999.9999",
-    "mymodule": "git://github.com/zhuOrg/orgrepo1.git#v2.1"
+    "mymodule": "git://github.com/npm/cli.git#v1.0.27"
     
   }
 }
