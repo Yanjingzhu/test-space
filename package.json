@@ -9,8 +9,8 @@
   "author": "yanjingzhu",
   "license": "ISC",
   "dependencies": {
-    "foo": "1.0.0 - 2.9999.9999"
-    
+    "foo": "1.0.0 - 2.9999.9999",
+    "mymodule": "git://github.com/npm/cli.git#v1.0.27"
     
   }
 }
