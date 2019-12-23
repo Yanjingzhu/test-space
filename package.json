@@ -9,7 +9,7 @@
   "author": "yanjingzhu",
   "license": "ISC",
   "dependencies": {
-    "foo": "1.0.0 - 2.9999.9999",
-    "foo-library": "git+https://yanjingzhu:Joling123*@github.com/yanjingzhu/npmpackages.git"
+    "foo": "1.0.0 - 2.9999.9999"
+
   }
 }
