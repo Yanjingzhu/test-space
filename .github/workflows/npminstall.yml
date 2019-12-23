@@ -6,7 +6,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+      with: 
+        persist-credentials: false
     - uses: actions/setup-node@v1
       with:
         node-version: 12
@@ -17,4 +19,9 @@ jobs:
           npm install
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
+    - name : install private github repo
+      run: |
+         npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/owner/repo.git
+      env: 
+         ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
 
