@@ -14,14 +14,15 @@ jobs:
         node-version: 12
         registry-url: 'https://registry.npmjs.org'
   
-    - name : "instll npm"
+    - name : "install npm"
       run: |
-          npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
+          npm install 
       env:
-        ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
-    #- name : install private github repo
-    #  run: |
-    #     npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
-    #  env: 
-    #     ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
+        NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
+    
+    - name : install private github repo
+      run: |
+         npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
+      env: 
+         ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
 
