@@ -9,4 +9,8 @@ jobs:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       uses: pullreminders/slack-action@master
       with:
-         args: '{\"channel\":\"C42BALQGK\",\"text\":\"Hello world\"}'
+         args: '{\"channel\":\"C42BALQGK\",\"text\":\"Hello world2\"}'
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@master
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
