@@ -8,6 +8,6 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: zhuorg/FirstJSAction@master
+      uses: zhu5201314/FirstJSAction@v2.0
       with:
         who-to-greet: 80345688
