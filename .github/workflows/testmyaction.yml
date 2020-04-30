@@ -6,8 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: yanOrganizRenameAgain/FirstJSAction@v2.0
+    - uses: actions/checkout@v2
+    - uses: Yanjingzhu/FirstJSAction@master
       with:
-        who-to-greet: r80345688
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: 'v1.0'
+          message: 'Release test'
+          commit: ${{ github.sha }}
