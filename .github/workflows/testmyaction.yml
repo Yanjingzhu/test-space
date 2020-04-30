@@ -10,6 +10,6 @@ jobs:
     - uses: Yanjingzhu/FirstJSAction@master
       with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: 'v1.0'
+          tag: 'v1.1'
           message: 'Release test'
           commit: ${{ github.sha }}
