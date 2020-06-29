@@ -1,5 +1,5 @@
 name: test my FirstJSAction
-on:   push
+on:   repository_dispatch
 
 jobs:
   create_tag:
