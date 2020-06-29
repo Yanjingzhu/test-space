@@ -1,5 +1,5 @@
 name : install dependency
-on: check_run
+on: push
 
 jobs:
   build:
