@@ -16,11 +16,11 @@ jobs:
         node-version: 12
         registry-url: 'https://registry.npmjs.org'
   
-#     - name : "install npm"
-#       run: |
-#           npm install 
-#       env:
-#         ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
+    - name : "install npm"
+      run: |
+          npm install 
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
     # git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
     - name : install private github repo
       run: |
