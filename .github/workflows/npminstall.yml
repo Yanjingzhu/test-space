@@ -13,7 +13,7 @@ jobs:
          persist-credentials: false
 
   
-    # git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git 1
+    # git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git 12
     - name : install private github repo
       run: |
          npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
