@@ -21,7 +21,7 @@ jobs:
           npm install 
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
-    # git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
+    # git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git 1
     - name : install private github repo
       run: |
          npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
