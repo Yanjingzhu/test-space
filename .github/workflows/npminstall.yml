@@ -28,4 +28,5 @@ jobs:
       env: 
          ANOTHER_TOKEN: ${{ secrets.npminstallPAT }}
          NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
+      shell: bash
 
