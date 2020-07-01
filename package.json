@@ -9,7 +9,6 @@
   "author": "yanjingzhu",
   "license": "ISC",
   "dependencies": {
-    "foo": "1.0.0 - 2.9999.9999" ,
-    "private":"git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git"
+    "foo": "1.0.0 - 2.9999.9999" 
   }
 }
