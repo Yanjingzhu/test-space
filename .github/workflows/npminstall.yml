@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
       with: 
@@ -20,12 +20,11 @@ jobs:
       run: |
           npm install 
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
         ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
     # git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
     - name : install private github repo
       run: |
-         npm install 
+         npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
       env: 
          ANOTHER_TOKEN: ${{ secrets.PackagePAT2 }}
 
