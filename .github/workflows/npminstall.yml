@@ -19,5 +19,4 @@ jobs:
          npm install git+https://$ANOTHER_TOKEN:x-oauth-basic@github.com/yanjingzhu/npmpackages.git
       env: 
          ANOTHER_TOKEN: ${{ secrets.npminstallPAT }}
-
-
+         NODE_AUTH_TOKEN: ${{ secrets.PackagePAT2 }}
